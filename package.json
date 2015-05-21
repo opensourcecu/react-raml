@@ -1,0 +1,19 @@
+{
+  "name": "react-raml",
+  "version": "0.0.0",
+  "description": "React components for rendering RAML documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opensourcecu/react-raml.git"
+  },
+  "author": "Matt Dean <matt@trabian.com> (https://www.trabian.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opensourcecu/react-raml/issues"
+  },
+  "homepage": "https://github.com/opensourcecu/react-raml"
+}
