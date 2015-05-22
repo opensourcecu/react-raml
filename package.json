@@ -4,7 +4,8 @@
   "description": "React components for rendering RAML documentation",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "env NODE_ENV=build webpack"
   },
   "repository": {
     "type": "git",
@@ -36,7 +37,8 @@
     "babel-plugin-object-assign": "^1.1.0",
     "autoprefixer-core": "^5.1.11",
     "webpack-dev-server": "^1.9.0",
-    "extract-text-webpack-plugin": "^0.8.0"
+    "extract-text-webpack-plugin": "^0.8.0",
+    "csswring": "^3.0.5"
   },
   "peerDependencies": {
     "react": ">= 0.13.3 < 0.14.0"
