@@ -2,7 +2,7 @@ This is sample documentation.
 
 It is a couple of paragraphs. **Cool.**
 
-```js
+```json
 {
   "key": "value",
   "someArray": [
