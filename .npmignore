@@ -1,3 +1,6 @@
-node_modules/
 demo/
 .gitignore
+webpack.build.js
+webpack.config.js
+webpack.dev.js
+src/
