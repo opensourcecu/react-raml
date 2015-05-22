@@ -75,11 +75,6 @@
    text-transform: uppercase;
   }
 
-  p.meta {
-    color: transparentize($base-font-color, 0.6);
-    font-family: $serif;
-  }
-
   p, ul {
     font-family: $serif;
     font-weight: 300;

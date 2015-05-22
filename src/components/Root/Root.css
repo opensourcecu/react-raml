@@ -6,9 +6,9 @@
 
 .title {
   font-family: $serif;
-  font-size: 24px;
 }
 
 .version {
-  color: #999;
+  color: $text-muted;
+  font-weight: 300
 }
