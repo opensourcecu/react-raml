@@ -1,6 +1,6 @@
 
-$sans-serif: 'Open Sans', sans-serif;
-$serif: 'Roboto Slab', serif;
+$sans-serif: "Open Sans", sans-serif;
+$serif: "Roboto Slab", serif;
 
 /* Typography */
 $base-font-family: $sans-serif;

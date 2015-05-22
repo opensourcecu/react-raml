@@ -10,7 +10,8 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: 'lib',
-    libaryTarget: 'commonjs2'
+    library: 'ReactRaml',
+    libraryTarget: 'umd'
   },
 
   module: {
@@ -25,26 +26,17 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
 
-  externals: [{
-    react: {
-      root: 'React',
-      commonjs2: 'react',
-      commonjs: 'react',
-      amd: 'react'
-    }
-  }],
+  externals: { react: 'react', 'react/addons': 'react' },
 
   postcss: {
     nodeModules: [
-      csswring
     ],
     defaults: [
       require('postcss-local-scope'),
       require('postcss-nested'),
       require('postcss-import'),
       require('postcss-simple-vars'),
-      require('autoprefixer-core')({ browsers: ['last 2 versions']}),
-      csswring
+      require('autoprefixer-core')({ browsers: ['last 2 versions']})
     ]
   },
 

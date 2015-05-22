@@ -34,8 +34,8 @@ export default class Documentation extends React.Component {
     };
   }
 
-  // Ignore for now - leave expanded by default
   toggleExpanded = () => {
+    return; // Skip for now
     this.setState(({ expanded }) => ({
       expanded: ! expanded
     }));
@@ -44,7 +44,7 @@ export default class Documentation extends React.Component {
   render() {
     return(
       <div>
-        <h3 className={styles.title}>{this.props.title}</h3>
+        <h3 className={styles.title} onClick={this.toggleExpanded}>{this.props.title}</h3>
         {this.state.expanded && this.renderExpanded()}
       </div>
     );
