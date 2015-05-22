@@ -8,4 +8,4 @@ This is very much a work in progress. So far it converts:
 
 into:
 
-![Screenshot](http://monosnap.com/image/nVw5ok1LzkRNicNclAhk42lMyP5EZb.png)!
+![Screenshot](http://monosnap.com/image/nVw5ok1LzkRNicNclAhk42lMyP5EZb.png)
