@@ -1,11 +1,29 @@
 import React from 'react'
 
 import TypeSystem from '../ui/TypeSystem';
+
 import Remarkable from 'remarkable';
+import hljs from 'highlight.js';
 
 import styles from './DocumentationItem.css';
 
-const md = new Remarkable();
+import 'highlight.js/styles/github.css';
+
+const md = new Remarkable({
+  highlight: (str, lang) => {
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        return hljs.highlight(lang, str).value;
+      } catch (err) {}
+    }
+
+    try {
+      return hljs.highlightAuto(str).value;
+    } catch (err) {}
+
+    return '';
+  }
+});
 
 export default class Documentation extends React.Component {
 

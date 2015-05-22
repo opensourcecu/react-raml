@@ -2,16 +2,6 @@
 
 .root {
 
-  $base-border-radius: 3px !default;
-  $base-line-height: 1.5em !default;
-  $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $base-link-color: $action-color !default;
-  $dark-gray: #333 !default;
-  $light-gray: #DDD !default;
-  $medium-screen: em(640) !default;
-  $base-font-color: $dark-gray !default;
-
   @include clearfix;
 
   text-align: left;
@@ -56,14 +46,14 @@
     }
   }
 
-  code {
+  pre {
     background: #F7F7F7;
-    border-radius: $base-border-radius * 1.5;
+    border-radius: calc($base-border-radius * 1.5);
     border: 1px solid #E0E0E0;
-    font-size: 0.8em;
     font-style: normal;
-    padding: 0.1em 0.4em;
-    white-space: nowrap;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    overflow: scroll;
   }
 
   h3 {

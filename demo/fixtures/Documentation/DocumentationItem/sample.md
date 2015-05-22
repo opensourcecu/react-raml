@@ -9,3 +9,15 @@ And this is a paragraph, with a list right after it.
 - Item 3
 
 This is another paragraph after the unordered list.
+
+Here's some JSON:
+
+```json
+{
+  "key": "value",
+  "someArray": [
+    "1",
+    "2"
+  ]
+}
+```
