@@ -2,8 +2,10 @@ import React from 'react';
 
 import Root from '../src/components/Root';
 
-import API from './fixtures/sample.raml';
+import API from './raml/sample.raml';
 
-console.warn('API', API);
+import styles from '../src/styles/default.css';
 
-React.render(<Root {...API} />, document.getElementById('outlet'));
+React.render(
+  <div className={styles.root}><Root {...API} /></div>
+, document.getElementById('outlet'));

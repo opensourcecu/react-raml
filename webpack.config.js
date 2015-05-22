@@ -11,11 +11,12 @@ module.exports = {
   name: 'demo',
 
   entry: {
-    demo: ['webpack/hot/dev-server', './demo/index.jsx']
+    demo: ['webpack/hot/dev-server', './demo/index.jsx'],
+    playground: ['webpack/hot/dev-server', './node_modules/cosmos-js/component-playground/entry.js']
   },
 
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
     path: './demo/build'
   },
 
@@ -25,6 +26,10 @@ module.exports = {
   },
 
   resolve: {
+    alias: {
+      components: __dirname + "/src/components",
+      fixtures: __dirname + "/demo/fixtures"
+    },
     extensions: ['', '.js', '.jsx']
   },
 
@@ -33,7 +38,12 @@ module.exports = {
     hot: true
   },
 
-  postcss: [ require('postcss-local-scope') ],
+  postcss: [
+    require('postcss-local-scope'),
+    require('postcss-nested'),
+    require('postcss-import'),
+    require('postcss-simple-vars')
+  ],
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

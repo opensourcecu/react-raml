@@ -4,7 +4,8 @@
   "description": "React components for rendering RAML documentation",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "play": "component-playground --components-path src/components --fixtures-path demo/fixtures"
   },
   "repository": {
     "type": "git",
@@ -30,9 +31,16 @@
     "postcss-loader": "^0.4.3",
     "postcss-local-scope": "0.0.4",
     "component-playground": "0.0.13",
-    "raw-loader": "^0.5.1"
+    "raw-loader": "^0.5.1",
+    "cosmos-js": "^0.6.3",
+    "postcss-nested": "^0.3.1",
+    "postcss-simple-vars": "^0.3.0",
+    "postcss-import": "^5.2.2"
   },
   "peerDependencies": {
     "react": ">= 0.13.3 < 0.14.0"
+  },
+  "dependencies": {
+    "remarkable": "^1.6.0"
   }
 }
