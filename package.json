@@ -2,7 +2,7 @@
   "name": "react-raml",
   "version": "0.0.0",
   "description": "React components for rendering RAML documentation",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "env NODE_ENV=build webpack"
