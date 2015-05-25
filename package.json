@@ -37,7 +37,9 @@
     "autoprefixer-core": "^5.1.11",
     "webpack-dev-server": "^1.9.0",
     "extract-text-webpack-plugin": "^0.8.0",
-    "csswring": "^3.0.5"
+    "csswring": "^3.0.5",
+    "eslint": "^0.21.2",
+    "eslint-loader": "^0.11.2"
   },
   "peerDependencies": {
     "react": ">= 0.13.3 < 0.14.0"
