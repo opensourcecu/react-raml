@@ -17,13 +17,14 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.jsx?$/, loader: 'babel', exclude: /node_modules/ },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?localIdentName=[name]__[local]!postcss-loader'), exclude: /node_modules/ },
+      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?module&localIdentName=[name]__[local]!postcss-loader'), exclude: /node_modules/ },
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader?pack=nodeModules'), include: /node_modules/ }
     ]
   },
 
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx'],
+    modulesDirectories: ['node_modules', 'components']
   },
 
   externals: { react: 'react', 'react/addons': 'react' },
@@ -32,7 +33,6 @@ module.exports = {
     nodeModules: [
     ],
     defaults: [
-      require('postcss-local-scope'),
       require('postcss-nested'),
       require('postcss-import'),
       require('postcss-simple-vars'),
