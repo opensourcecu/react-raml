@@ -1,0 +1,32 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "jest": true,
+    "describe": true,
+    "it": true,
+    "xit": true,
+    "expect": true,
+    "beforeEach": true
+  },
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "rules": {
+    "quotes": [2, "single"],
+    "comma-dangle": "always-multiline",
+    "strict": 0,
+    "no-unused-vars": [2], 
+    "react/jsx-uses-react": [1],
+    "react/jsx-uses-vars": [1],
+    "react/react-in-jsx-scope": [1],   
+  }
+}

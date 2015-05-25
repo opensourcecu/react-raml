@@ -1,6 +1,6 @@
 import content from 'raw!./sample.md';
 
 module.exports = {
-  title: "Documentation Title",
+  title: 'Documentation Title',
   content: content
-}
+};

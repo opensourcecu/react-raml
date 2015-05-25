@@ -1,4 +1,4 @@
-import './styles/fonts.css'
+import './styles/fonts.css';
 
 export { default as DefaultStyles } from './components/DefaultStyles';
 export { default as Root } from './components/Root/Root';

@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 import styles from './DefaultStyles.css';
 
 export default class DefaultStyles extends React.Component {
 
   render() {
-    return(
+    return (
       <div className={styles.root}>
         {this.props.children}
       </div>

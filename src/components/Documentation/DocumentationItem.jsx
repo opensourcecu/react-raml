@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import TypeSystem from '../ui/TypeSystem';
 
@@ -14,12 +14,18 @@ const md = new Remarkable({
     if (lang && hljs.getLanguage(lang)) {
       try {
         return hljs.highlight(lang, str).value;
-      } catch (err) {}
+      } catch (err) {
+        // Ignore
+        return null;
+      }
     }
 
     try {
       return hljs.highlightAuto(str).value;
-    } catch (err) {}
+    } catch (err) {
+      // Ignore
+      return null;
+    }
 
     return '';
   }
@@ -35,14 +41,13 @@ export default class Documentation extends React.Component {
   }
 
   toggleExpanded = () => {
-    return; // Skip for now
-    this.setState(({ expanded }) => ({
-      expanded: ! expanded
-    }));
+    //  this.setState(({ expanded }) => ({
+    //    expanded: !expanded
+    //  }));
   }
 
   render() {
-    return(
+    return (
       <div>
         <h3 className={styles.title} onClick={this.toggleExpanded}>{this.props.title}</h3>
         {this.state.expanded && this.renderExpanded()}
@@ -55,7 +60,7 @@ export default class Documentation extends React.Component {
       <TypeSystem>
         <div dangerouslySetInnerHTML={{__html: md.render(this.props.content)}} />
       </TypeSystem>
-    )
+    );
   }
 
 }

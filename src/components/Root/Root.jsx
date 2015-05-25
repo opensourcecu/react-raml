@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import styles from './Root.css';
 
@@ -7,7 +7,7 @@ import DocumentationList from '../Documentation/DocumentationList';
 export default class Root extends React.Component {
 
   render() {
-    return(
+    return (
       <div className={styles.root}>
       <h1 className={styles.title}>{this.props.title}{' '}
         {this.props.version &&

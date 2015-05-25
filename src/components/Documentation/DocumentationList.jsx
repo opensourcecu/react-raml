@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import DocumentationItem from './DocumentationItem';
 
@@ -12,7 +12,7 @@ export default class DocumentationList extends React.Component {
       <DocumentationItem {...document} />
     ));
 
-    return(
+    return (
       <div>
         {documentations}
       </div>
