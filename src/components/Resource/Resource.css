@@ -6,6 +6,6 @@
   extends: title from "../styles/type.css";
 }
 
-.version {
+.subtitle {
   extends: subtitle from "../styles/type.css";
 }

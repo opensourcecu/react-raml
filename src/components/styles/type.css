@@ -1,0 +1,10 @@
+@import "./variables.css";
+
+.title {
+  font-family: $serif;
+}
+
+.subtitle {
+  color: $text-muted;
+  font-weight: 300;
+}

@@ -7,7 +7,7 @@ import hljs from 'highlight.js';
 
 import styles from './DocumentationItem.css';
 
-import 'highlight.js/styles/github.css';
+// import 'highlight.js/styles/github.css';
 
 const md = new Remarkable({
   highlight: (str, lang) => {
