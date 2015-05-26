@@ -26,7 +26,7 @@
     "react-hot-loader": "^1.2.7",
     "raml-loader": "0.0.1",
     "style-loader": "^0.12.2",
-    "css-loader": "^0.14.2",
+    "css-loader": "^0.14.3",
     "postcss-loader": "^0.4.3",
     "raw-loader": "^0.5.1",
     "cosmos-js": "^0.6.3",
@@ -39,7 +39,9 @@
     "extract-text-webpack-plugin": "^0.8.0",
     "csswring": "^3.0.5",
     "eslint": "^0.21.2",
-    "eslint-loader": "^0.11.2"
+    "eslint-loader": "^0.11.2",
+    "postcss-calc": "^4.0.1",
+    "object-assign": "^2.0.0"
   },
   "peerDependencies": {
     "react": ">= 0.13.3 < 0.14.0"

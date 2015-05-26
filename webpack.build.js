@@ -17,28 +17,12 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.jsx?$/, loader: 'babel', exclude: /node_modules/ },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?module&localIdentName=[name]__[local]!postcss-loader'), exclude: /node_modules/ },
+      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?module&localIdentName=[name]__[local]&importLoaders=1!postcss-loader'), exclude: /node_modules/ },
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader?pack=nodeModules'), include: /node_modules/ }
     ]
   },
 
-  resolve: {
-    extensions: ['', '.js', '.jsx'],
-    modulesDirectories: ['node_modules', 'components']
-  },
-
   externals: { react: 'react', 'react/addons': 'react' },
-
-  postcss: {
-    nodeModules: [
-    ],
-    defaults: [
-      require('postcss-nested'),
-      require('postcss-import'),
-      require('postcss-simple-vars'),
-      require('autoprefixer-core')({ browsers: ['last 2 versions']})
-    ]
-  },
 
   plugins: [
     new ExtractTextPlugin('styles.css', { allChunks: true }),
