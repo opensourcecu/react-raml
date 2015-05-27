@@ -8,5 +8,15 @@ documentation:
     content: !include documentation-2.md
 /gists:
   displayName: Gists
+  description: !include gist-description.md
   /public:
     displayName: Public Gists
+    description: Public gists (description)
+    /{gistId}:
+      displayName: Public Gist
+      description: Individual public gist
+      uriParameters:
+        gistId:
+          displayName: Gist ID
+          description: The ID of the Gist
+          type: integer

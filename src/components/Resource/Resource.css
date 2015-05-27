@@ -1,11 +1,20 @@
+@import "../styles/variables.css";
+
 .root {
 
 }
 
 .title {
   extends: title from "../styles/type.css";
+  font-family: $sans-serif;
 }
 
-.subtitle {
+.uri {
   extends: subtitle from "../styles/type.css";
+  font-size: 0.9em;
+}
+
+.relativeUri {
+  font-weight: 600;
+  color: $base-font-color;
 }

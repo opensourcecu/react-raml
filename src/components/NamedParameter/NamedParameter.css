@@ -1,0 +1,48 @@
+@import "../styles/variables.css";
+
+.root {
+  @media (min-width: $medium-screen) {
+    display: flex;
+    align-items: flex-start;
+  }
+  border-bottom: 1px solid $light-gray;
+  padding: 0.75em;
+  font-family: $sans-serif;
+  font-size: 12px;
+}
+
+.summary {
+  @media (min-width: $medium-screen) {
+    margin-right: 3em;
+    flex: 1;
+    text-align: right;
+  }
+  @media (max-width: $medium-screen) {
+    margin-bottom: 1em;
+  }
+}
+
+.name {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  font-size: 14px;
+}
+
+.displayName {
+  extends: name;
+}
+
+.required {
+  text-transform: uppercase;
+  color: orange;
+  font-weight: 300;
+}
+
+.details {
+  @media (min-width: $medium-screen) {
+    flex: 3;
+  }
+  p {
+    margin-bottom: 0
+  }
+}

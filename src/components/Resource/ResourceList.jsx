@@ -11,7 +11,7 @@ export default class ResourceList extends React.Component {
     const { resources } = this.props;
 
     const resourceList = resources && resources.map(resource => (
-      <Resource {...resource} />
+      <Resource {...resource} parentUri={this.props.parentUri} depth={this.props.depth} />
     ));
 
     return (

@@ -1,0 +1,17 @@
+@import "../styles/variables.css";
+
+.title {
+  extends: title from "./Resource.css";
+  font-size: 18px;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid $light-gray;
+}
+
+.uri {
+  extends: uri from "./Resource.css";
+}
+
+.relativeUri {
+  extends: relativeUri from "./Resource.css";
+}

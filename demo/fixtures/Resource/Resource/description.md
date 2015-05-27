@@ -1,0 +1,1 @@
+The Gist API provides up to one megabyte of content for each file in the gist. Every call to retrieve a gist through the API has a key called `truncated`. If `truncated` is `true`, the file is too large and only a portion of the contents were returned in `content`.

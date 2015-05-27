@@ -1,0 +1,16 @@
+.title {
+  extends: title from "./Resource.css";
+}
+
+.uri {
+  extends: uri from "./Resource.css";
+
+}
+
+.relativeUri {
+  extends: relativeUri from "./Resource.css";
+}
+
+.children {
+  padding: 0 1em;
+}
