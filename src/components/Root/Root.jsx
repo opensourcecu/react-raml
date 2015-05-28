@@ -16,8 +16,10 @@ export default class Root extends React.Component {
       </h1>
       {this.props.documentation &&
        <DocumentationList documentation={this.props.documentation} />}
-      {this.props.resources &&
-       <ResourceList resources={this.props.resources} />}
+       {this.props.resources &&
+        <div className={styles.resourceList}>
+          <ResourceList resources={this.props.resources} />
+        </div>}
       </div>
     );
   }

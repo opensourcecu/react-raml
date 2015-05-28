@@ -1,7 +1,7 @@
-@import "../styles/variables.css";
+@import '../styles/variables.css';
 
 .title {
-  extends: title from "./Resource.css";
+  extends: title from './Resource.css';
   font-size: 18px;
   margin-bottom: 0.5em;
   padding-bottom: 0.5em;
@@ -9,9 +9,13 @@
 }
 
 .uri {
-  extends: uri from "./Resource.css";
+  extends: uri from './Resource.css';
 }
 
 .relativeUri {
-  extends: relativeUri from "./Resource.css";
+  extends: relativeUri from './Resource.css';
+}
+
+.description {
+  extends: description from './Resource.css';
 }

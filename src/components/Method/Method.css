@@ -1,0 +1,25 @@
+@import '../styles/variables.css';
+
+.root {
+
+}
+
+.title {
+  extends: title from '../styles/type.css';
+  line-height: 1.5em;
+  font-size: 1em;
+  font-family: $sans-serif;
+}
+
+.method {
+  border-radius: $base-border-radius;
+  background: $blue;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  padding: 4px 10px;
+}
+
+.description {
+  font-size: 14px;
+}

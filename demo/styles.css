@@ -1,0 +1,6 @@
+@import '../src/components/styles/variables.css';
+
+.jsonRep {
+  margin-top: 2em;
+  border-top: 1px solid $light-gray;
+}

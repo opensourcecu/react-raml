@@ -25,7 +25,7 @@ module.exports = {
       {test: /\.jsx?$/, loader: 'eslint-loader', exclude: /node_modules/}
     ],
     loaders: [
-      { test: /\.jsx?$/, loaders: ['react-hot', 'babel'], exclude: [/node_modules/, /flycheck/] },
+      { test: /\.jsx?$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ },
       { test: /\.raml$/, loader: 'raml' },
       { test: /\.css$/, loader: 'style-loader!css-loader?module&localIdentName=[name]__[local]___[hash:base64:5]&importLoaders=1!postcss-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader?pack=nodeModules', include: /node_modules/ }

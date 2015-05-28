@@ -30,7 +30,9 @@ export default class Documentation extends React.Component {
 
   renderExpanded() {
     return (
-      <MarkdownBlock content={this.props.content} />
+      <div className={styles.content}>
+        <MarkdownBlock content={this.props.content} />
+      </div>
     );
   }
 

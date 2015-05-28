@@ -23,12 +23,13 @@ $base-z-index: 0;
 $blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #eee;
+$light-gray: #ddd;
 
 /* Font Colors */
 $base-font-color: $dark-gray;
 $action-color: $blue;
 $text-muted: #999;
+$active-color: $blue;
 
 /* Border */
 $base-border-color: $light-gray;

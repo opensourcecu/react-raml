@@ -1,33 +1,12 @@
 import React from 'react';
 
 import Remarkable from 'remarkable';
-import hljs from 'highlight.js';
 
 import TypeSystem from '../ui/TypeSystem';
 
-import 'highlight.js/styles/github.css';
+import highlight from './highlight';
 
-const md = new Remarkable({
-  highlight: (str, lang) => {
-    if (lang && hljs.getLanguage(lang)) {
-      try {
-        return hljs.highlight(lang, str).value;
-      } catch (err) {
-        // Ignore
-        return null;
-      }
-    }
-
-    try {
-      return hljs.highlightAuto(str).value;
-    } catch (err) {
-      // Ignore
-      return null;
-    }
-
-    return '';
-  }
-});
+const md = new Remarkable({ highlight });
 
 export default class MarkdownBlock extends React.Component {
 

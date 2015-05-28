@@ -17,6 +17,7 @@ module.exports = objectAssign({
       require('postcss-import'),
       require('postcss-simple-vars'),
       require('postcss-calc')(),
+      require('postcss-color-function')(),
       require('autoprefixer-core')({ browsers: ['last 2 versions']})
     ]
   },

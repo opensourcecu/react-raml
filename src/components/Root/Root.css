@@ -9,3 +9,7 @@
 .version {
   extends: subtitle from "../styles/type.css";
 }
+
+.resourceList {
+  margin: 1.5em 0 0;
+}

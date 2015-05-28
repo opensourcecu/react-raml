@@ -9,6 +9,26 @@ documentation:
 /gists:
   displayName: Gists
   description: !include gist-description.md
+  get:
+    displayName: Get a list of Gists
+    description: |
+      Get a list of Gists. And do **other stuff**
+    body:
+      application/json:
+        schema: |
+          {
+            "$schema": "http://json-schema.org/draft-03/schema",
+            "properties": {
+                "input": {
+                    "required": false,
+                    "type": "string"
+                }
+            },
+            "required": false,
+            "type": "object"
+          }
+  post:
+    displayName: Create a new Gist
   /public:
     displayName: Public Gists
     description: Public gists (description)

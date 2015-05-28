@@ -1,0 +1,26 @@
+@import "../styles/variables.css";
+
+.root {
+  display: flex;
+  align-items: start;
+}
+
+.tab {
+  margin-right: 1em;
+  text-decoration: none;
+  transition: color 0.25s ease;
+  color: $base-font-color;
+}
+
+.isNotSelected {
+  extends: tab;
+  color: $dark-gray;
+  &:hover {
+    color: color($active-color shade(25%));
+  }
+}
+
+.isSelected {
+  extends: tab;
+  color: $active-color;
+}

@@ -1,0 +1,13 @@
+.root {
+
+}
+
+.mediaTypes {
+  display: flex;
+  align-items: flex-start;
+}
+
+.mediaType {
+  margin-right: 1em;
+  text-decoration: none;
+}

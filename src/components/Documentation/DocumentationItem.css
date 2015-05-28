@@ -1,5 +1,10 @@
 @import "../styles/variables.css";
 
 .title {
+  extends: title borderedTitle from "../styles/type.css";
+}
 
+.content {
+  margin: 0 0 0 1em;
+  font-size: 14px;
 }
